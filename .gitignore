@@ -1,0 +1,21 @@
+# IDE
+.idea/
+.vscode/
+
+#env
+.env
+.env.local
+.env.development
+.env.production
+
+# Misc
+sandbox
+node_modules
+dist
+coverage
+*.xml
+
+# yarn
+.pnp.js
+.yarnrc.yml
+.yarn

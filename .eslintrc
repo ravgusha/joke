@@ -1,0 +1,32 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"@typescript-eslint",
+		"react-hooks",
+		"svg-import-helper"
+	],
+	"ignorePatterns": ["config/**/*.js"],
+	"rules": {
+		"@typescript-eslint/no-explicit-any": "off",
+		"semi": "off",
+		"@typescript-eslint/no-non-null-assertion": 0,
+		"@typescript-eslint/semi": [
+			"warn"
+		],
+		"@typescript-eslint/no-empty-interface": [
+			"error",
+			{
+				"allowSingleExtends": true
+			}
+		],
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn",
+		"svg-import-helper/correct-import": "warn"
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended"
+	]
+}
